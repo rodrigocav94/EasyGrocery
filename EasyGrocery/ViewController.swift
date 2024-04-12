@@ -36,6 +36,7 @@ class ViewController: UITableViewController {
     
     @objc func onTapAddItem() {
         let ac = UIAlertController(title: "Add a new item", message: nil, preferredStyle: .alert)
+        ac.view.tintColor = .accent
         ac.addTextField()
         ac.addAction(
             UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
